@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@300;400;500;700&family=Poppins:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Card NLW Copa</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/header-logo.svg" alt="logo nlw copa." />
+    </header>
+    <div class="subTitle"><h3>Escolha sua trilha</h3></div>
+    <!-- input que ativará a troca card -->
+    <div class="container">
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="explorerTheme"><img src="./assets/trilha-explorer.svg" /></i>
+        <div class="fas fa-duotone fa-futbol"></div>
+        <i class="iginiteTheme"><img src="./assets/trilhaIgnite.svg" /></i>
+      </label>
+    </div>
+    <div class="card" id="card" ondblclick="changeCard()">
+      <img src="https://github.com/Jtomio.png" alt="foto capa usuario" />
+      <div class="info">
+        <h1>Jeison Tomio</h1>
+        <p>Dev Front-end</p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/998c60ef77.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
